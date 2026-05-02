@@ -1,0 +1,65 @@
+Capitulo 2, preguntas del libro 
+
+Pregunta 1:
+La respuesta es A,D y G ya que las demás respuestas son de tipo aritméticos o solo se usan en valores primitivos, las seleccionadas se usan en específicamente en valores booleanos y el ultimo que se puede castear sobre una variable booleana.
+
+Pregunta 2:
+A,B y D, ya que son los tipos de datos que soportan números, claro igual dependiendo de el tamaño de los dichos tipos de números.
+
+Pregunta 3:
+B,C,D y F, ya que de entrada el código da error ya que son dos tipos de datos que manejan números, pero la diferencia es el tamaño las opciones correctas dan soluciones para bajar el long a un tipo que se pueda interactuar con el int.
+
+Pregunta 4:
+B, ya que en la linea 5 se hace toda la operación, que mas que nada solo pregunta si son diferentes, el único que cambia su valor es wolf que por eso da falso, por que canine se queda con true y en la otra operación solo pregunta si esos dos valores son diferentes pero se queda con el valor de 20. 
+
+Pregunta 5:
+A,C, cada operador tiene igual o mayor precedencia que el anterior, es un orden estricto que llevan los operadores, esto no lo sabia, mas bien echo de que orden tenia cada uno, pero investigando me di cuenta del orden que llevan. Las respuestas seleccionadas representan ese orden que deben llevar, las demás respuestas se encuentran en forma descendente.
+
+Pregunta 6:
+F, es ninguna de las anteriores, ya que se esta haciendo un casteo que no se puede, y la otra es que existe errores en la linea 3 y 9 por lo ya comentado intentando devolver un float como un long.
+
+Pregunta 7:
+D, Por los operadores lógicos que evaluar ya que || es un OR y siempre va a agarrar la primera que cumpla, de izquierda a derecha lo lee, por eso la razon de la respuesta, mayormente la respuesta de este ejercicio es ver si te dan True o False y con los operadores lógicos se pueden descifrar fácilmente.
+
+Pregunta 8:
+A, por que en la linea 5 pig incrementa pero como ya se tiene guardado el 4 se sobrescribe y se queda con 4 y en goat lo que nada mas hace es restarle 1 y se queda con uno y por eso la respuesta es 4 - 1.
+
+Pregunta 9:
+Las respuestas correctas son A, D, E, lo que significa que los valores únicos impresos son 1, 4 y 5.
+
+Pregunta 10:
+G, ya que el código no compila, debido a la multiplicación ya que son de tipo short y se castean a byte y al hacer la multiplicación se pasan a int, por eso es el error que da.
+
+Pregunta 11:
+D ya que siguiendo la jerarquía de operaciones los que tienen mayor rango son los de dentro del paréntesis, también los signos % /  lo que daría resultado  2, 0, 5.
+
+Pregunta 12:
+D, el post increment x++, como se explica se aumenta el valor pero te regresa el valor original y el pre-decremento disminuye el valor y te devuelve el nuevo.
+
+Pregunta 13:
+F, la clave de este ejercicio esta en la precedencia de operadores, ya que siguiendo el orden y las reglas de ellos puedes llegar al resultado, conociendo los significados de los operadores, &,&& y !, que son los que hacen las operaciones en este ejercicio.
+
+Pregunta 14:
+B,E,G las respuestas correcta por que != compara referencias, él operador & y el | siempre escogerán el valor de la izquierda y el operador ! no puede negar valores numéricos.
+
+Pregunta 15:
+D, ya que el operador ternario puede aceptar 3 valores, los demás operadores son binarios, por lo tanto solo puede aceptar dos valores y el único que se usa un valor es el de la opción F.
+
+Preguntas 16:
+B, por que desde la linea 1 marca error por el casting que esta haciendo, al tratar de guardar al tipo long y por eso es que masca error.
+
+Pregunta 17:
+C,F, esa es la respuesta ya por los operadores que te están dando, incrementan su valor al momento de estar interactuando las dos variables entre si, gracias a sus nuevos asignes de valores o a los mismos incrementos.
+
+Pregunta 18:
+C, solo se puede usar () para modificar las operaciones, claro igual por que así esta en la regla de la jerarquía de operaciones, ya que los () tiene prioridad en ejecutarse primero.
+
+Pregunta 19:
+B,F, ya que dada la operación es como se queda, igual por el Byte.MAX_VALUE que es 127 pero como se le incrementa el + 1 este se desborda y su valor cambia a -128,por eso es que esa es la respuesta, cabe aclarar que de esa regla no lo recordaba y lo investigue, para tener claro esta pregunta.
+
+Pregunta 20:
+A,D y E, los operadores unitarios siempre se ejecutan primero por que tiene la mayor precedencia, él pre-incremento devuelve el valor ya incrementado(++x), al contrario de el post-incremento(x++)que devuelve el valor original y el operador ! negación solo funciona con valores booleanos, no funciona en valores numéricos.
+
+Pregunta 21:
+F, ya que vale 8. Luego, al aplicar el operador ~ por lo que bird queda en -9. Después plane es simplemente el negativo de 8, o sea -8. Al evaluar la expresión ternaria bird == plane, se compara -9 con -8, lo cual es falso, así que superman toma el valor 10. Al imprimir se usa --superman, que es un pre-decremento, por lo que primero baja de 10 a 9 antes de mostrarse. Sin embargo, en la impresión se concatena directamente después de evaluar, dando como resultado final: -9,-8,10.
+

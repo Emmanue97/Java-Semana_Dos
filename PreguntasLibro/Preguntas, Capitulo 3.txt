@@ -1,0 +1,89 @@
+Preguntas, Capitulo 3:
+
+Pregunta 1:
+A,B,C,E,F,G Una expresión switch solo admite los tipos primitivos int, byte, short y char junto con sus clases asocidas, igual acepta enums y strings, también que se admite el var.
+
+Pregunta 2:
+La respuesta correcta es B porque el código compila y se ejecuta sin problemas. Aunque hay dos else seguidos, cada uno pertenece a un if diferente. El valor de humidity es 8 (-4 + 12). El primer if es verdadero, pero el segundo es falso, por lo que se ejecuta su else, imprimiendo "Just Right".
+
+Pregunta 3:
+A,D,F,H, porque el foreach funciona con arreglos (como A y F) y con clases que implementan Iterable (como D y H). No todas las clases del framework de colecciones califican, y tipos como String no sirven porque no implementan Iterable, aunque parezcan una secuencia de caracteres.
+
+Pregunta 4:
+F, porque el código no compila: en un switch expression debes cubrir todos los casos posibles (o incluir un default). Como falta eso, hay error de compilación. Si se agregara un default, entonces sí compilaría y en ejecución imprimiría "Turtle". Además, a diferencia del switch tradicional, el switch expression solo ejecuta una rama y no usa break.
+
+Pregunta 5:
+E, porque el segundo for-each tiene un continue que siempre se ejecuta, por lo que la línea print() nunca puede alcanzarse. Esto provoca un error de compilación por código inalcanzable. Las demás partes del código sí compilan correctamente.
+
+Pregunta 6:
+C,D y E, Un for-each solo funciona con estructuras que implementan Iterable (no con Map), por eso A es incorrecta. El do/while se ejecuta al menos una vez, mientras que while puede ejecutarse cero o más veces, haciendo correcta E y falsa B. El for evalúa la condición al inicio, por lo que también puede ejecutarse cero o más veces (C correcta). Un switch con String necesita un default si asigna resultado (D correcta). Y cada if solo puede tener un else, por eso F es incorrecta.
+
+Pregunta 7:
+B,D, las dos opciones son las correctas, por que ambas imprimen bien el for, uno lo imprime de forma correcta y el otro de forma inversa.
+
+Pregunta 8:
+G, porque hay dos errores de compilación,El problema aparece en la línea con ||, ya que si el objeto no es Long, la variable bat no existe y aun así se intenta usar en bat <= 20, lo cual no es válido. Además, default no se puede usar en un if/else (solo en switch). Por esas dos razones, el código no compila.
+
+Pregunta 9 :
+B,C,E porque todas siguen el mismo comportamiento en los bucles anidados. El programa incrementa count cuando la suma de row + col es impar y sale del ciclo interno cuando es par. En las primeras iteraciones, count llega a 1, luego se sale del ciclo interno, y tras continuar con el ciclo externo, finalmente count llega a 2 y el programa termina.
+
+pregunta 10:
+E,hay varias razones por la que el ejercicio no compila, no se puede usar continue en un swich,Un case debe ser una constante en tiempo de compilación,Un valor como Sunday no sirve si no está declarado como final,DayOfWeek.MONDAY es un enum, pero el switch está usando un int, y los tipos deben coincidir, estas son las razones por la cual no compila.
+
+Pregunta 11:
+A, por que el código corre sin problema alguno, y si llamas ese case, es lo que te dará el valor que contiene en este caso es MAMMAL.
+
+Pregunta 12:
+C, el resultado es 23, yo caí con la trampa no contemplaba la condición del while, pero una vez lo vi entendí por que el 23, y es sencillo de entender lo suma los números hasta que la condición del while se cumpla.
+
+Pregunta 13:
+G, podría parecer mas difícil, pero simplemente por el cual no compila el programa es por la falta de paréntesis, de la condición while, si este tuviera los paréntesis el programa correría sin ningún problema.
+
+Pregunta 14:
+B,D y F, porque en cada bucle for-each el tipo de la variable que recorre depende directamente del tipo de elementos que contiene la estructura.
+
+Pregunta 15:
+F,el código no compila debido a un error de sintaxis en el switch. En el segundo case se intenta agrupar valores usando : sin repetir la palabra case, lo cual no es válido en Java.
+
+Pregunta 16:
+A,B y D,porque recorren el arreglo en orden inverso correctamente, empezando desde el último índice (length - 1) hasta el primero (0).
+
+Pregunta 17:
+B y E, El primer bucle se ejecuta cinco veces hasta que participants llega a 10, por eso E es correcta. El segundo es un do/while, así que se ejecuta al menos una vez aunque la condición no se cumpla al inicio, dejando animals en 3, lo que hace correcta B.
+
+Pregunta 18:
+C y E, porque el pattern matching en Java se usa con el operador instanceof, lo que hace verdadera la opción C. Además, la opción E es correcta porque describe el concepto de flow scoping, donde la variable solo existe cuando la condición garantiza su validez
+
+Pregunta 19:
+E, pensaba que si compilaba, pero al ver la respuesta entendí el por que no compila el código, porque la variable snake se declara dentro del bloque del do/while, por lo que solo existe dentro de ese bloque. Al intentar usarla fuera , está fuera de alcance y el código no compila.
+
+Pregunta 20:
+A,E, porque el problema principal es que el bucle más interno es infinito. Por lo tanto, solo funcionan las opciones que evitan entrar a ese bucle o logran salir de él.
+
+Pregunta 21:
+E, porque hay cuatro errores de compilación. Long no es un tipo válido para un switch, falta un ; y un yield en una línea, otra tiene un ; extra, y dos case usan el mismo valor, lo cual no está permitido. Por eso se requieren cuatro correcciones.
+
+Pregunta 22:
+E, porque el código sí compila y se ejecuta correctamente. El switch acepta var y también permite usar variables final como constantes en los case.
+
+Pregunta 23:
+F, porque hay un error de compilación: aparece un else sin un if previo que le corresponda. En Java, cada else debe estar asociado a un if.
+
+Pregunta 24:
+G,porque el código no compila: usa la palabra in, que no existe en Java para bucles. En un for-each se debe usar :.
+
+Pregunta 25:
+D,porque el código sí compila y la variable viola no afecta nada ya que no se usa. En el switch, "violin" y "VIOLIN" no coinciden exactamente, por lo que se ejecuta el default.
+
+Pregunta 26:
+F, porque el código sí compila, pero tiene un problema lógico. La variable r se modifica fuera del do/while, por lo que dentro del bucle su valor no cambia. Esto hace que la condición r <= 1 nunca deje de cumplirse, provocando un bucle infinito en tiempo de ejecución.
+
+Pregunta 27:
+F,porque el switch es una expresión que debe devolver un valor en todos los caminos.
+
+Pregunta 28:
+F, porque, debido al flow scoping, la variable guppy sigue estando en alcance después del if cuando la condición no se cumple.
+
+Pregunta 29:
+C, porque se usa pre-incremento, así que el valor se incrementa antes de mostrarse. El ciclo empieza mostrando -1 y continúa incrementando hasta que llega a 6.
+
